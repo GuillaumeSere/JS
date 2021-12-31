@@ -1,7 +1,9 @@
 body {
     overflow: hidden;
     min-height: 100vh;
-    background: rgb(194, 194, 194);
+    background:url(./images/christmas.jpg) no-repeat ;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .bubble {
@@ -18,7 +20,7 @@ body {
        top: -250px;
        left: var(--left);
        opacity: 1;
-       filter: hue-rotate(720deg);
+       filter: hue-rotate(420deg);
     }
 }
 
@@ -27,4 +29,50 @@ h3 {
     text-align: center;
     margin-top: 20px;
     color: rgba(93, 92, 92, 0.555);
+}
+
+h1{
+    text-align: center;
+    color: white;
+    font-size: 100px;
+    transform: translateX(500px);
+    z-index: 2;
+}
+
+h1 span {
+    color: red;
+}
+
+.banner{
+    width: 100%;
+    z-index: 10;
+}
+
+img{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    margin-top: -800px;
+}
+
+.card{
+    padding: 10px;
+    text-align: center;
+    color: white;
+    position: relative;
+    margin-left: 100px;
+    margin-top: -100px;
+    width: 500px;
+    height: 600px;
+    border: white 1px solid;
+    border-radius: 25px;
+}
+
+.card h2 {
+    font-size: 25px;
+    color: red;
+}
+
+.card p {
+    font-size: 20px;
 }
